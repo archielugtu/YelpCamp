@@ -63,6 +63,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // To remove data, use:
 app.use(mongoSanitize());
 
+// Secret for mongodbstore and signed session cookies
 const secret = process.env.SECRET || 'thisisasecret'
 
 const store = new MongoDBStore({
