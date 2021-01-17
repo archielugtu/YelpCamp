@@ -49,6 +49,7 @@ CampgroundSchema.virtual('properties.popUpMarkup').get(function() {
         <p>${this.description.substring(0, 80)}...</p>`
 })
 
+// Deletes the reviews associated with the deleted campground!
 CampgroundSchema.post('findOneAndDelete', async function(camp) {
     if(camp) {
         await Review.deleteMany({
