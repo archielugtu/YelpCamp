@@ -3,7 +3,7 @@ const map = new mapboxgl.Map({
     container: 'cluster-map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-103.59179687498357, 40.66995747013945],
-    zoom: 3
+    zoom: 1
 });
 
 map.addControl(new mapboxgl.NavigationControl());
@@ -74,7 +74,7 @@ map.on('load', function () {
         filter: ['!', ['has', 'point_count']],
         paint: {
             'circle-color': '#9400D3',
-            'circle-radius': 4,
+            'circle-radius': 6,
             'circle-stroke-width': 1,
             'circle-stroke-color': '#fff'
         }

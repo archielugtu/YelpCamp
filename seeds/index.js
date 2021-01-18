@@ -3,8 +3,15 @@ const cities = require('./cities'); // imports the cities.js file containing 100
 const { places, descriptors } = require('./seedHelpers');   // use destructuring to capture places & descriptors data in 'seedHelpers.js' file
 const Campground = require('../models/campground'); // imports the campground model
 
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
+// const dbURL = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';  // production || development
+const dbURL = 'mongodb://localhost:27017/yelp-camp';  // production || development
+
 // Connect to the yelp-camp database
-mongoose.connect('mongodb://localhost:27017/yelp-camp', { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+mongoose.connect(dbURL, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
 
 // Checks if you succesfully/failed to connected to the database
 const db = mongoose.connection;
@@ -21,12 +28,12 @@ const sample = array => array[Math.floor(Math.random() * array.length)];
 const seedDB = async () => {
     await Campground.deleteMany({});    // Delete all existing campgrounds in the db
     
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 30; i++) {
         const random1000 = Math.floor(Math.random() * 1000);    // generate a number between 0 to 1000 to use as index for the cities.js
         const price = Math.floor(Math.random() * 20) + 10;
         const camp = new Campground({
             // YOUR USER ID
-            author: '5fff74a73a2ff0414927155c',
+            author: '6003f19986618482c564b013',
             title: `${sample(descriptors)} ${sample(places)}`,
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus voluptates rerum voluptate illum minima maiores quibusdam quod architecto reprehenderit voluptatem dolor ipsum labore aperiam, veritatis illo at. Praesentium, iure!",
