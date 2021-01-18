@@ -25,13 +25,6 @@ YelpCamp is created for people to explore, share, and review campgrounds from al
   * Creator role - Can edit or delete created campground information
   * Viewer role - Can leave feedback on campgrounds
 * **Authentication & Authorization** - user has to be logged in to create campgrounds and feedbacks. Only campground owner can edit campground details
-## Screenshots
-
-<img width="1673" alt="Landing Page" src="https://user-images.githubusercontent.com/38335606/57000991-1c2e9b80-6b6b-11e9-9222-f4d5ee390843.png">
-
-<img width="1670" alt="Home Page" src="https://user-images.githubusercontent.com/38335606/57000992-1c2e9b80-6b6b-11e9-8419-5385f6481d86.png">
-
-<img width="1674" alt="Campground Page" src="https://user-images.githubusercontent.com/38335606/57000993-1c2e9b80-6b6b-11e9-833e-2e0b2f611215.png">
 
 ## Author
 * Rchi Lugtu
