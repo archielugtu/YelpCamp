@@ -20,7 +20,7 @@ YelpCamp is created for people to explore, share, and review campgrounds from al
 ## Project Key Features
 * **Cluster Map** - Campgrounds cluster displayed on map, clickable map marker, map controls (CTRL + Click on map and drag to tilt map)
 * **Campground** -  Create, Read, Update, Delete campgrounds (CRUD)
-* **Feedback** -  Create, Read, Update, Delete campgrounds (CRUD)
+* **Feedback** -  Create, Read, Update, Delete feedbacks (CRUD)
 * **User** - Register, Login, Logout
   * Creator role - Can edit or delete created campground information
   * Viewer role - Can leave feedback on campgrounds
