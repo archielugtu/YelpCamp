@@ -15,15 +15,16 @@ YelpCamp is created for people to explore, share, and review campgrounds from al
     npm start
 ```
 ## Technologies Used
-* Front End: HTML, CSS, Bootstrap
-* Back End: NodeJS, ExpressJS, REST, PassportJS, MongoDB
+* Front End: HTML, CSS, Bootstrap, EJS
+* Back End: NodeJS, ExpressJS, MongoDB, Mongoose, PassportJS, Joi, 
 ## Project Features
-* **Cluster Map** - campgrounds cluster on map, clickable map marker, map controls (CTRL + Click on map and drag to tilt map)
+* **Cluster Map** - Campgrounds cluster displayed on map, clickable map marker, map controls (CTRL + Click on map and drag to tilt map)
 * **Campground** -  Create, Read, Update, Delete campgrounds (CRUD)
 * **Feedback** -  Create, Read, Update, Delete campgrounds (CRUD)
 * **User** - Register, Login, Logout
-  * Creator role - Edit or delete campground information
-  * Viewer role - Leave feedback on campgrounds
+  * Creator role - Can edit or delete created campground information
+  * Viewer role - Can leave feedback on campgrounds
+* Authentication and authentication - user has to be logged in to create campgrounds and feedbacks. Only campground owner can edit campground details
 ## ScreenShot
 
 <img width="1673" alt="Landing Page" src="https://user-images.githubusercontent.com/38335606/57000991-1c2e9b80-6b6b-11e9-9222-f4d5ee390843.png">
