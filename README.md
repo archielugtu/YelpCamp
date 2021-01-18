@@ -5,7 +5,7 @@ YelpCamp is created for people to explore, share, and review campgrounds from al
 ## Prerequisites
 * Account in MongoDB (For storing the user data) https://www.mongodb.com
 * Account in Cloudinary (For uploading files and images) https://cloudinary.com
-## Installing
+## Installation
 * Install project dependencies
 ```
     npm install
@@ -15,9 +15,9 @@ YelpCamp is created for people to explore, share, and review campgrounds from al
     npm start
 ```
 ## Technologies Used
-* Front End: HTML, CSS, Bootstrap, EJS
-* Back End: NodeJS, ExpressJS, MongoDB, Mongoose, PassportJS, Joi, 
-## Project Features
+* **Front End**: HTML, CSS, Bootstrap, EJS
+* **Back End**: NodeJS, ExpressJS, MongoDB, Mongoose, PassportJS, Joi, 
+## Project Key Features
 * **Cluster Map** - Campgrounds cluster displayed on map, clickable map marker, map controls (CTRL + Click on map and drag to tilt map)
 * **Campground** -  Create, Read, Update, Delete campgrounds (CRUD)
 * **Feedback** -  Create, Read, Update, Delete campgrounds (CRUD)
