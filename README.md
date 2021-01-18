@@ -8,7 +8,7 @@ YelpCamp is created for people to explore, share, and review campgrounds from al
 ## Installing
 * Install project dependencies
 ```
-    npm init
+    npm install
 ```
 * Run the app (this runs on localhost:3000)
 ```
